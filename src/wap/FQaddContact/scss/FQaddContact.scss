@@ -1,0 +1,67 @@
+@charset 'utf-8';
+@import '../../../assets/scss/usage/layout/reset.scss';
+@import '../../../assets/scss/usage/layout/common.scss';
+@import '../../../assets/fonts/iconfont.css';
+$tgray: #a8afac;
+$green: #2dce8f;
+html{
+    // background: #fff;
+}
+.noWeiXin{
+    padding-top:0.88rem;
+}
+$padding:0.4rem;
+.head{
+    width:100%;
+    padding:0 $padding;
+    line-height: 0.8rem;
+    color:#999999;
+    font-size:0.24rem;
+}
+.list{
+    width:100%;
+    padding-left: $padding;
+    @include border(1px 0 1px 0, #eaeaea, solid);
+    background: #fff;
+    input{
+        border:0;
+        text-align: right;
+    }
+    .left{
+        line-height: 1.17rem;
+        width:2rem;
+    }
+    .item{
+        @include border(0 0 1px 0, #eaeaea, solid);
+        padding-right:$padding;
+        height:1.17rem;
+    }
+    .item:last-child{
+        @include border(0, #eaeaea, solid);
+    }
+}
+.btn{
+    width:100%;
+    padding:0 $padding;
+    padding-top:0.51rem;
+    >div{
+        width:100%;
+        height:1rem;
+        background: #2ECE90;
+        line-height: 1rem;
+        text-align: center;
+        font-size:0.36rem;
+        color:#fff;
+        @include border-radius(0.04rem);
+    }
+}
+.footer{
+    font-size:0.24rem;
+    color:#999999;
+    height:0.84rem;
+    .iconfont{
+        color:#FFAE22;
+        margin-right:0.1rem;
+        font-size:0.38rem;
+    }
+}

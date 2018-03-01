@@ -1,0 +1,70 @@
+@charset 'utf-8';
+@import '../../../assets/scss/usage/layout/reset.scss';
+@import '../../../assets/scss/usage/layout/common.scss';
+@import '../../../assets/fonts/iconfont.css';
+$tgray: #a8afac;
+$green: #2dce8f;
+html{
+    // background: #fff;
+}
+.noWeiXin{
+    padding-top:0.88rem;
+}
+.list{
+    padding: 0.46rem 0.5rem 0;
+    .item{
+        width:100%;
+        height:2.4rem;
+        background: #fff;
+        @include border-radius(0.1rem);
+        margin-bottom:0.43rem;
+        .left{
+            padding:0.5rem 0.38rem 0 0.45rem;
+            >div{
+                width:0.7rem;
+                img{
+                    width:0.7rem;
+                }
+            }
+        }
+        .right{
+            color:#333333;
+            padding-top:0.4rem;
+            p:nth-child(1){
+                font-size:0.36rem;
+                line-height: 0.52rem;
+            }
+            p:nth-child(2){
+                font-size:0.20rem;
+                color:#666666;
+                line-height: 0.36rem;
+            }
+            p:nth-child(3){
+                font-size:0.41rem;
+                line-height: 0.95rem;
+                span{
+                    margin-right:0.4rem;
+                }
+            }
+        }
+    }
+}
+.btn{
+    width:100%;
+    padding:0 0.53rem;
+    height:1.18rem;
+    >div{
+        >div{
+            width:99%;
+            height:99%;
+            @include border(1, #b3b3b3, dashed, 0.08rem);
+            line-height: 1.18rem;
+            text-align: center;
+            font-size:0.34rem;
+            color:#2ECE90;
+            span{
+                margin-right:0.25rem;
+            }
+        }
+    }
+}

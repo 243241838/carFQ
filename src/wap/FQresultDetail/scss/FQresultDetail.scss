@@ -1,0 +1,49 @@
+@charset 'utf-8';
+@import '../../../assets/scss/usage/layout/reset.scss';
+@import '../../../assets/scss/usage/layout/common.scss';
+@import '../../../assets/fonts/iconfont.css';
+html{
+    // background: #fff;
+}
+.noWeiXin{
+    padding-top:0.88rem;
+}
+$padding:0.4rem;
+.head{
+    .top{
+        padding-top:1.17rem;
+        text-align: center;
+        img{
+            width:1.8rem;
+        }
+    }
+    .success{
+        color:#333333;
+        font-size:0.48rem;
+        text-align: center;
+        margin-bottom:0.27rem;
+        line-height: 1.82rem;
+    }
+    .bottom{
+        width:5.72rem;
+        margin:0 auto;
+        text-align: center;
+        line-height:0.4rem;
+        font-size:0.26rem;
+        color:#666666;
+    }
+}
+.btn{
+    padding:0 $padding;
+    padding-top:0.92rem;
+    width:100%;
+    >div{
+        height:1rem;
+        line-height: 1rem;
+        background: #2ECE90;
+        text-align: center;
+        font-size:0.36rem;
+        color: #FFFFFF;
+        @include border-radius(0.04rem);
+    }
+}

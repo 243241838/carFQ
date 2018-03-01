@@ -1,0 +1,186 @@
+@charset 'utf-8';
+@import '../../../assets/scss/usage/layout/reset.scss';
+@import '../../../assets/scss/usage/layout/common.scss';
+@import '../../../assets/fonts/iconfont.css';
+html{
+    // background: #fff;
+}
+.noWeiXin{
+    padding-top:0.88rem;
+}
+$padding:0.40rem;
+.head{
+    width:100%;
+    padding: 0 0.40rem;
+    line-height: 1.6rem;
+    background: #fff;
+    color: #333333;
+    .left{
+        width:1.3rem;
+        font-size:0.3rem;
+    }
+    .right{
+        font-size:0.6rem;
+        font-weight: bold;
+    }
+}
+//分期选择
+.list{
+    .item{
+        height:1.18rem;
+        line-height: 1.18rem;
+        background: #fff;
+        padding:0 $padding;
+        font-size:0.3rem;
+        color:#333333;
+        &.first{
+            line-height: 0.6rem;
+            height:0.6rem;
+            background:#f1f2f5;
+            color:#999999;
+            font-size: 0.24rem;
+        }
+        >div{
+            text-align: center;
+        }
+        .first, .last{
+            width:0.67rem;
+        }
+        >div{
+            .iconfont{
+                font-size:0.4rem;
+                color:#51BC83;
+            }
+        }
+    }
+}
+//手续费说明
+.explain{
+    width:100%;
+    padding:0 $padding;
+    height:0.81rem;
+    color:#999999;
+    font-size:0.24rem;
+    @include border(1px 0 1px 0, #e3e3e3, solid);
+    .iconfont{
+        color:#6492E3;
+        margin-left:0.2rem;
+    }
+}
+.money{
+    width:100%;
+    background: #fff;
+    padding:0 $padding;
+    padding-bottom:0.18rem;
+    margin-bottom:0.45rem;
+    .top{
+        width:100%;
+        height:1.17rem;
+        line-height: 1.17rem;
+        @include border(0 0 1px 0, #ececec, solid);
+        margin-bottom:0.17rem;
+        font-size:0.3rem;
+        color:#333333;
+    }
+    .bottom{
+        .li{
+            height:0.46rem;
+            line-height: 0.46rem;
+            color:#999999;
+            font-size:0.24rem;
+        }
+    }
+}
+.btn{
+    >div{
+        width:6.7rem;
+        height:1rem;
+        margin:0 auto;
+        line-height: 1rem;
+        background: #e3e3e3;
+        text-align: center;
+        @include border-radius(0.04rem );
+        color:#FFFFFF;
+        font-size:0.36rem;
+        &.isSubmit{
+            background: #2ECE90;
+        }
+    }
+}
+.footer{
+    width:100%;
+    text-align: center;
+    font-size:0.24rem;
+    line-height: 0.66rem;
+    color:#999999;
+    >span{
+        color:#2ece90;
+    }
+}
+//弹框
+.com_alert {
+    width:6.6rem;
+    // height:5.57rem;
+    background:#fff;
+    position: fixed;
+    @include border-radius(0.2rem);
+    .top{
+        width:6.2rem;
+        height:1.09rem;
+        margin:0 auto;
+        position: relative;
+        margin-bottom:0.3rem;
+        @include border(0 0 1px 0, #EFEFF4, solid);
+        >div{
+            text-align: center;
+            line-height:1.09rem;
+            position: absolute;
+            left:0;
+            right:0;
+            font-size:0.36rem;
+            color:#333333;
+            z-index: -1;
+        }
+        .fr_span{
+            margin-top:0.3rem;
+            display: inline-block;
+            width:0.48rem;
+            height:0.48rem;
+            background: #B8BFCC;
+            line-height: 0.48rem;
+            text-align: center;
+            @include border-radius(50%);
+            .iconfont{
+                font-size:0.24rem;
+                color:#fff;
+            }
+        }
+    }
+    .center {
+        margin-bottom:0.3rem;
+        >div{
+            height:0.9rem;
+            width:100%;
+            font-size:0.3rem;
+            color: #333333;
+            div:first-child{
+            //    width:1.7rem;
+            }
+            div:nth-child(2){
+                // width:0.6rem;
+                // height:0.01rem;
+                // background: #999999;
+                color:#999;
+                margin-right:0.5rem;
+            }
+        }
+        >div:nth-child(3){
+            color:#999999;
+            font-size:0.28rem;
+            .iconfont{
+                color: #ffae22;
+                margin-right:0.18rem;
+            }
+        }
+    }
+}

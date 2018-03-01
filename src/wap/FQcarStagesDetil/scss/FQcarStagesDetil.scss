@@ -1,0 +1,182 @@
+@charset 'utf-8';
+@import '../../../assets/scss/usage/layout/reset.scss';
+@import '../../../assets/scss/usage/layout/common.scss';
+@import '../../../assets/fonts/iconfont.css';
+html{
+    // background: #fff;
+}
+.noWeiXin{
+    padding-top:0.88rem;
+}
+$padding:0.36rem;
+.head{
+    width:100%;
+    height:2.9rem;
+    background: #2ECE90;
+    >div{
+        padding-top:1.04rem;
+        padding-left:0.34rem;
+        >div{
+            text-align: center;
+            color:#fff;
+            .top{
+               font-size:0.54rem;
+               font-weight: bold;
+               line-height: 0.68rem;
+            }
+            .bottom{
+                font-size:0.24rem;
+                line-height: 0.40rem;
+            }
+        }
+        .left{
+            width:3.91rem;
+        }
+        .right{
+            width:1.95rem;
+        }
+    }
+}
+.textData{
+    padding:0.31rem $padding 0.22rem;
+    background: #fff;
+    .item{
+       width:100%;
+       line-height: 0.6rem;
+       height:0.6rem;
+       font-size: 0.28rem;
+       color:#999999;
+       .right{
+           color:#666666;
+       }
+
+    }
+}
+.stsTime{
+    margin-bottom:0.39rem;
+}
+.list{
+    width:100%;
+    @include border(0 0 1px 0, #eaeaea, solid);
+    padding-bottom:0.01rem;
+    margin-bottom:0.4rem;
+    .top{
+        @include border(1px 0 1px 0, #eaeaea, solid);
+        color:#333333;
+        background: #fff;
+        .left{
+            width:3.36rem;
+        }
+        // 当前期
+        &.select{
+           @include border(1px 0 1px 0, #E3FFF4, solid);
+           background: #E3FFF4;
+           color:#2ECE90;
+        }
+        // 逾期
+        &.overdue{
+            @include border(1px 0 1px 0, #FFE2E2, solid);
+           background: #FFE2E2;
+           color:#E53B3B;
+        }
+        // 已还
+        &.Has_also{
+            color:#999999;
+        }
+        padding-bottom:0.01rem;
+          >div{
+            width:100%;
+            height:0.64rem;
+            font-size:0.24rem;
+            padding:0 $padding;
+            >div:first-child{
+                width:0.06rem;
+                height:0.26rem;
+                background: #333333;
+                margin-right:0.16rem;
+                // 当前期
+                &.select{
+                    background: #2ECE90;
+                }
+                 // 逾期
+                &.overdue{
+                    background: #E53B3B;
+                }
+                 // 已还
+                &.Has_also{
+                    background:#999999;
+                }
+            }
+          } 
+    }
+    .item{
+         padding:0 $padding;
+         height:1.54rem;
+         margin-bottom:0.18rem;
+         background: #fff;
+         >div{
+             div:first-child{
+                 font-size:0.3rem;
+                 color:#333333;
+                  // 已还
+                 &.Has_also{
+                     color:#999999;
+                 }
+             }
+             div:last-child{
+                 font-size:0.24rem;
+                 color:#999999;
+             }
+         }
+        .left{
+            width:2.19rem;
+        }
+        .center{
+            width:2.43rem;
+        }
+        .right{
+            margin-left:0.83rem;
+            font-size:0.28rem;
+            .period{
+                color:#333333;
+                // 当前期
+                &.select{
+                    color:#2ECE90;
+                }
+                 // 逾期
+                &.overdue{
+                    color:#FF3E3E;
+                }
+                  // 已还
+                &.Has_also{
+                    color:#999999;
+                }
+            }
+        }
+    }
+}
+.weihuan{
+    width:100%;
+    padding:0 0.36rem;
+    line-height: 0.79rem;
+    font-size:0.3rem;
+    font-weight: bold;
+}
+.btn{
+    padding: 0 $padding;
+    margin-bottom:0.5rem;
+    >div{
+        width:100%;
+        height:0.76rem;
+        @include border-radius(0.08rem);
+        background: #fff;
+        line-height: 0.76rem;
+        text-align: center;
+        font-size:0.3rem;
+        color: #999999;
+        .iconfont{
+            font-size:0.24rem;
+            color:#999999;
+        }
+    }
+}
